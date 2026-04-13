@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firman Hanafi — Solutions Architect | Portfolio</title>
+  <meta name="description" content="Firman Hanafi — Solutions Architect with 11+ years in software development. Specializing in payment technology architecture, event-driven systems, microservices, and AI/LLM integration at DOKU, Indonesia's pioneer payment gateway.">
+  <meta name="author" content="Firman Hanafi">
+  <meta property="og:title" content="Firman Hanafi — Solutions Architect">
+  <meta property="og:description" content="11+ years in software development. Expert in payment systems architecture, microservices, and AI-assisted engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hanafifirman11.github.io/my-portfolio/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#hero" class="nav-logo">&lt;<span>FH</span>/&gt;</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open to opportunities
+          </div>
+          <h1 class="hero-name">Firman Hanafi</h1>
+          <p class="hero-title">Solutions Architect</p>
+          <p class="hero-tagline" id="heroTagline">
+            <span class="typed-text"></span><span class="cursor">|</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary">View My Journey →</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="number">11+</div>
+              <div class="label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="number">5+</div>
+              <div class="label">Years in Payment Tech</div>
+            </div>
+            <div class="hero-stat">
+              <div class="number">2</div>
+              <div class="label">Open Source Projects</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <img src="assets/T7PJT7DA9-UG4A7G96Y-748b63883c26-512.jpeg" alt="Firman Hanafi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Scaling Systems,<br>Exploring Trails</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text reveal reveal-delay-1">
+          <p>
+            I'm a <strong>Solution Architect</strong> with over <strong>11 years of experience</strong> in software
+            development, including 5+ years focused on <strong>payment technology architecture</strong> at
+            <strong>DOKU</strong> — Indonesia's pioneering payment gateway.
+          </p>
+          <p>
+            I design <strong>core financial systems</strong>, reconciliation platforms, transfer services, remittance
+            flows, and API architectures that process <strong>millions of transactions</strong>. My expertise lies in
+            event-driven architecture, microservices, and nanoservices patterns.
+          </p>
+          <p>
+            Recently, I've been shifting my focus towards <strong>AI-assisted development practices</strong>, Vibe Coding,
+            and workflow automation using <strong>n8n and LLM integration</strong> to accelerate engineering productivity.
+          </p>
+          <p>
+            Outside of work, I enjoy <strong>camping with my family</strong>, exploring specialty coffee, and occasional
+            hiking trips — just as the tagline says: <em>scaling systems, exploring trails</em>.
+          </p>
+        </div>
+        <div class="about-highlights reveal reveal-delay-2">
+          <div class="highlight-card">
+            <div class="icon">🏗️</div>
+            <div class="title">System Architecture</div>
+            <div class="desc">Designing scalable, event-driven payment platforms</div>
+          </div>
+          <div class="highlight-card">
+            <div class="icon">💳</div>
+            <div class="title">FinTech & Payments</div>
+            <div class="desc">PCI DSS compliant systems processing millions of transactions</div>
+          </div>
+          <div class="highlight-card">
+            <div class="icon">🤖</div>
+            <div class="title">AI & Automation</div>
+            <div class="desc">LLM integration, n8n workflows, and Vibe Coding practices</div>
+          </div>
+          <div class="highlight-card">
+            <div class="icon">⛰️</div>
+            <div class="title">Explorer at Heart</div>
+            <div class="desc">Camping, coffee, and trail adventures with family</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Career</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">A journey from Java Programmer to Solutions Architect, building payment infrastructure at scale.</p>
+      </div>
+      <div class="timeline">
+        <!-- DOKU - Solutions Architect -->
+        <div class="timeline-item current reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-company">DOKU, PT Nusa Satu Inti Artha</div>
+          <h3 class="timeline-role">Solutions Architect</h3>
+          <div class="timeline-period">Apr 2021 — Present</div>
+          <div class="timeline-location">📍 DKI Jakarta · Remote</div>
+          <div class="timeline-skills">
+            <span class="skill-tag">Solution Architecture</span>
+            <span class="skill-tag">Cloud-Native</span>
+            <span class="skill-tag">ELK Stack</span>
+            <span class="skill-tag">AI/LLM Integration</span>
+            <span class="skill-tag">n8n</span>
+          </div>
+        </div>
+
+        <!-- DOKU - Software Architect -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-company">DOKU, PT Nusa Satu Inti Artha</div>
+          <h3 class="timeline-role">Software Architect</h3>
+          <div class="timeline-period">Apr 2021 — Jun 2022</div>
+          <div class="timeline-location">📍 DKI Jakarta</div>
+          <div class="timeline-skills">
+            <span class="skill-tag">Enterprise Architecture</span>
+            <span class="skill-tag">ELK Stack</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+
+        <!-- DOKU - Technical Lead -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-company">DOKU, PT Nusa Satu Inti Artha</div>
+          <h3 class="timeline-role">Technical Lead</h3>
+          <div class="timeline-period">Mar 2018 — Apr 2021</div>
+          <div class="timeline-location">📍 Menara Mulia, DKI Jakarta</div>
+          <div class="timeline-skills">
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">Technical Leadership</span>
+            <span class="skill-tag">ELK Stack</span>
+            <span class="skill-tag">Spring Boot</span>
+          </div>
+        </div>
+
+        <!-- DOKU - Software Engineer -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-company">DOKU, PT Nusa Satu Inti Artha</div>
+          <h3 class="timeline-role">Software Engineer</h3>
+          <div class="timeline-period">Mar 2017 — Mar 2018</div>
+          <div class="timeline-location">📍 Jakarta</div>
+          <div class="timeline-skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Spring Framework</span>
+          </div>
+        </div>
+
+        <!-- Ace Global -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-company">PT. Ace Global Consulting and Integration</div>
+          <h3 class="timeline-role">Java Programmer</h3>
+          <div class="timeline-period">Mar 2015 — Feb 2017</div>
+          <div class="timeline-location">📍 Jakarta</div>
+          <div class="timeline-skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Apache Tomcat</span>
+          </div>
+        </div>
+
+        <!-- Numazu -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-company">PT. Numazu Trans Teknologi</div>
+          <h3 class="timeline-role">Java Programmer</h3>
+          <div class="timeline-period">Jan 2014 — Jan 2015</div>
+          <div class="timeline-location">📍 Jakarta</div>
+          <div class="timeline-skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Apache Tomcat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Tech Stack & Skills</h2>
+        <p class="section-subtitle">A curated collection of technologies, tools, and methodologies I work with daily.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Architecture & Design -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="cat-icon">🏛️</div>
+          <div class="cat-title">Architecture & Design</div>
+          <div class="cat-items">
+            <span class="skill-tag">Solution Architecture</span>
+            <span class="skill-tag">Enterprise Architecture</span>
+            <span class="skill-tag">System Design</span>
+            <span class="skill-tag">Cloud-Native</span>
+            <span class="skill-tag">Event-Driven (DDD)</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+
+        <!-- AI & Automation -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="cat-icon">🤖</div>
+          <div class="cat-title">AI & Automation</div>
+          <div class="cat-items">
+            <span class="skill-tag">AI Pair Programming</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">Vibe Coding</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">Workflow Automation</span>
+          </div>
+        </div>
+
+        <!-- Domain Expertise -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="cat-icon">💳</div>
+          <div class="cat-title">Domain Expertise</div>
+          <div class="cat-items">
+            <span class="skill-tag">Payment Systems</span>
+            <span class="skill-tag">Transfer & Remittance</span>
+            <span class="skill-tag">PCI DSS</span>
+            <span class="skill-tag">FinTech</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="cat-icon">⚙️</div>
+          <div class="cat-title">Backend & Languages</div>
+          <div class="cat-items">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Java EE</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Spring MVC</span>
+            <span class="skill-tag">Spring Batch</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Play Framework</span>
+            <span class="skill-tag">Hibernate</span>
+            <span class="skill-tag">JSP</span>
+            <span class="skill-tag">Primefaces</span>
+            <span class="skill-tag">JSF</span>
+            <span class="skill-tag">JBoss ESB</span>
+          </div>
+        </div>
+
+        <!-- Frontend & Mobile -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="cat-icon">🎨</div>
+          <div class="cat-title">Frontend & Mobile</div>
+          <div class="cat-items">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">AngularJS</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="cat-icon">🗄️</div>
+          <div class="cat-title">Databases</div>
+          <div class="cat-items">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Oracle SQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">Database Optimization</span>
+            <span class="skill-tag">Database Design</span>
+          </div>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="cat-icon">☁️</div>
+          <div class="cat-title">Infrastructure & Cloud</div>
+          <div class="cat-items">
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Helm Charts</span>
+            <span class="skill-tag">OpenShift</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">SonarQube</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">IaC</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Alibaba Cloud</span>
+          </div>
+        </div>
+
+        <!-- Messaging & Observability -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="cat-icon">📡</div>
+          <div class="cat-title">Messaging & Observability</div>
+          <div class="cat-items">
+            <span class="skill-tag">Apache Kafka</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Elastic Stack</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+          </div>
+        </div>
+
+        <!-- Tools & Methodologies -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="cat-icon">🔧</div>
+          <div class="cat-title">Tools & Methodologies</div>
+          <div class="cat-items">
+            <span class="skill-tag">IntelliJ IDEA</span>
+            <span class="skill-tag">STS</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">SBT</span>
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">JIRA</span>
+            <span class="skill-tag">Technical Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Open Source</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Custom n8n community nodes I've built and published for workflow automation.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- n8n-nodes-7z -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-header">
+            <span class="project-icon">📦</span>
+            <div class="project-links">
+              <a href="https://github.com/hanafifirman11/n8n-nodes-7z" target="_blank" rel="noopener" aria-label="GitHub Repository">🔗</a>
+            </div>
+          </div>
+          <h3 class="project-name">n8n-nodes-7z</h3>
+          <p class="project-desc">
+            A custom n8n community node for compressing and decompressing files using the 7-Zip format.
+            Enables automated file archiving workflows directly within n8n pipelines.
+          </p>
+          <div class="project-tech">
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">7-Zip</span>
+            <span class="skill-tag">MIT License</span>
+          </div>
+        </div>
+
+        <!-- n8n-nodes-postgresql-copy -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-header">
+            <span class="project-icon">🐘</span>
+            <div class="project-links">
+              <a href="https://github.com/hanafifirman11/n8n-nodes-postgresql-copy" target="_blank" rel="noopener" aria-label="GitHub Repository">🔗</a>
+            </div>
+          </div>
+          <h3 class="project-name">n8n-nodes-postgresql-copy</h3>
+          <p class="project-desc">
+            A custom n8n community node extending PostgreSQL capabilities with the COPY command for
+            high-performance bulk data ingestion and extraction in automated workflows.
+          </p>
+          <div class="project-tech">
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">COPY Command</span>
+            <span class="skill-tag">MIT License</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="education-card reveal reveal-delay-1">
+        <div class="education-icon">🎓</div>
+        <div class="education-info">
+          <div class="school">STMIK Dharma Negara</div>
+          <div class="degree">Bachelor in Computer Science (S.Kom), Informatics Engineering</div>
+          <div class="period">2015 — 2017</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="section-header reveal">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Interested in collaboration, architecture consulting, or just a conversation about technology and coffee? Feel free to reach out.</p>
+        </div>
+        <div class="contact-links reveal reveal-delay-1">
+          <a href="https://www.linkedin.com/in/firman-h-032352118/" target="_blank" rel="noopener" class="contact-link">
+            <span class="link-icon">💼</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/hanafifirman11" target="_blank" rel="noopener" class="contact-link">
+            <span class="link-icon">🐙</span>
+            GitHub
+          </a>
+          <a href="mailto:hanafifirman11@gmail.com" class="contact-link">
+            <span class="link-icon">✉️</span>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Firman Hanafi. Built with ☕ and clean code.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
