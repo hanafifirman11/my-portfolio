@@ -722,6 +722,29 @@ ul, ol {
   margin-bottom: 12px;
 }
 
+.timeline-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.timeline-desc ul {
+  margin-top: 6px;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.timeline-desc ul li {
+  margin-bottom: 4px;
+  list-style: disc;
+}
+
+.timeline-desc strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 .timeline-skills {
   display: flex;
   flex-wrap: wrap;
