@@ -842,6 +842,57 @@ ul, ol {
   position: relative;
 }
 
+/* Category Tabs */
+.project-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.project-tab {
+  padding: 10px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 50px;
+  color: var(--text-muted);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+}
+
+.project-tab:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.project-tab.active {
+  background: var(--accent-subtle);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Tab Panels */
+.project-panel {
+  display: none;
+}
+
+.project-panel.active {
+  display: block;
+  animation: fadeInPanel 0.4s ease;
+}
+
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Projects Grid (Open Source & Personal) */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -892,6 +943,11 @@ ul, ol {
   font-size: 2rem;
 }
 
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
 .project-links a {
   font-size: 1.2rem;
   color: var(--text-muted);
@@ -921,6 +977,148 @@ ul, ol {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+/* WIP Badge */
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.project-badge.wip {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.project-badge.live {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* Case Study Cards (Notable Work) */
+.casestudy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.casestudy-card {
+  padding: 32px;
+  background: var(--gradient-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.casestudy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #c084fc);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.casestudy-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-6px);
+}
+
+.casestudy-card:hover::before {
+  opacity: 1;
+}
+
+.casestudy-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.casestudy-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.casestudy-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.casestudy-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.casestudy-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.step-label {
+  flex-shrink: 0;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 72px;
+  text-align: center;
+}
+
+.step-label.problem {
+  background: rgba(248, 113, 113, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.25);
+}
+
+.step-label.approach {
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border: 1px solid var(--border-glass);
+}
+
+.step-label.impact {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.step-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding-top: 2px;
+}
+
+.casestudy-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
 }
 
 /* ---------- Education Section ---------- */
@@ -1124,6 +1322,15 @@ ul, ol {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .casestudy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .casestudy-step {
+    flex-direction: column;
+    gap: 6px;
   }
 
   .timeline::before {
