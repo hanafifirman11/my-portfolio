@@ -154,6 +154,32 @@
     particlesContainer.appendChild(particle);
   }
 
+  // ---------- Project Tabs ----------
+  const projectTabs = document.querySelectorAll('.project-tab');
+  const projectPanels = document.querySelectorAll('.project-panel');
+
+  projectTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.getAttribute('data-tab');
+
+      // Update active tab
+      projectTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Switch panel
+      projectPanels.forEach((panel) => panel.classList.remove('active'));
+      const activePanel = document.getElementById('panel-' + targetTab);
+      if (activePanel) {
+        activePanel.classList.add('active');
+
+        // Re-observe reveal elements in newly active panel
+        activePanel.querySelectorAll('.reveal:not(.revealed)').forEach((el) => {
+          revealObserver.observe(el);
+        });
+      }
+    });
+  });
+
   // ---------- Smooth scroll for anchor links ----------
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
