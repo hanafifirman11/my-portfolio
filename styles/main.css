@@ -740,6 +740,16 @@ ul, ol {
   list-style: disc;
 }
 
+.timeline-desc ul ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 18px;
+}
+
+.timeline-desc ul ul li {
+  list-style: circle;
+}
+
 .timeline-desc strong {
   color: var(--text-primary);
   font-weight: 600;
